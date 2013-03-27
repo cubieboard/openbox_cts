@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?><TestPackage AndroidFramework="Android 1.0" appNameSpace="com.android.connectivitymanagertest" appPackageName="android.wifi.unit" name="ConnectivityManagerTest" runner=".ConnectivityManagerUnitTestRunner"  targetNameSpace="com.android.connectivitymanagertest" version="1.0">    
+        <TestSuite name="com">        
+                <TestSuite name="android">            
+                        <TestSuite name="connectivitymanagertest">   
+                                <TestSuite name="unit">                                                                                             
+                                       <TestCase name="WifiClientTest">                    
+                                            <Test name="testAddRemoveNetwork"/>      
+                                            <Test name="testEnableDisableNetwork"/>    
+                                            <Test name="testPingSupplicant"/>    
+                                            <Test name="testSaveConfig"/>    
+                                            <Test name="testWifiBroadcasts"/>                               
+                                        </TestCase>  
+                                        <TestCase name="WifiSoftAPTest">                    
+                                           <Test name="testApSsidWithAlphabet"/>                                  
+                                        </TestCase>    
+                                </TestSuite>             
+                        </TestSuite>            
+                </TestSuite>        
+        </TestSuite>    
+</TestPackage>
+
+
+<!--
+<test name="WifiUnitTest"
+    build_path="frameworks/base/core/tests/ConnectivityManagerTest"
+    package="com.android.connectivitymanagertest"
+    runner=".ConnectivityManagerUnitTestRunner"     
+    />
+com.android.connectivitymanagertest.unit.WifiClientTest
+com.android.connectivitymanagertest.unit.WifiSoftAPTest
+-->

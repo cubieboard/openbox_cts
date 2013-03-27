@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?><TestPackage AndroidFramework="Android 1.0" 
+	appNameSpace="com.android.connectivitymanagertest"
+	appPackageName="android.wifi.content" 
+	name="ConnectivityManagerTest" 
+	runner=".ConnectivityManagerTestRunner"  
+	targetNameSpace="com.android.connectivitymanagertest" version="1.0">    
+        <TestSuite name="com">        
+                <TestSuite name="android">            
+                        <TestSuite name="connectivitymanagertest">   
+                                <TestSuite name="functional">                                                                                             
+                                       <TestCase name="ConnectivityManagerMobileTest">                    
+                                          <Test name="testConnectToWifi"/>                    
+                                          <Test name="testConnectToWifWithKnownAP"/>                    
+                                          <Test name="testDisconnectWifi"/>                    
+                                          <Test name="testDataConnectionOverAMWithWifi"/>                    
+                                          <Test name="testDataConnectionWithWifiToAMToWifi"/> 
+                                          <Test name="testWifiStateChange"/>                   
+                                        </TestCase>  
+                                        <TestCase name="WifiConnectionTest">                    
+                                           <Test name="testWifiConnections"/>                                      
+                                        </TestCase>    
+                                </TestSuite>             
+                        </TestSuite>            
+                </TestSuite>        
+        </TestSuite>    
+</TestPackage>
+<!--
+<test name="wifi-connectivity"
+    build_path="frameworks/base/core/tests/ConnectivityManagerTest"
+    package="com.android.connectivitymanagertest"
+    runner=".ConnectivityManagerTestRunner"
+    coverage_target="framework" /> 
+com.android.connectivitymanagertest.functional.ConnectivityManagerMobileTest
+com.android.connectivitymanagertest.functional.WifiConnectionTest
+-->

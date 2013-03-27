@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?><TestPackage AndroidFramework="Android 1.0" appNameSpace="com.android.browser.tests" appPackageName="android.browser" name="BrowserTests" runner="android.test.InstrumentationTestRunner"  targetNameSpace="com.android.browser" version="1.0">    
+        <TestSuite name="com">        
+                <TestSuite name="android">            
+                        <TestSuite name="browser">                
+                                <TestCase name="BrowserProviderTests">                    
+                                        <Test name="testHasDefaultBookmarks"/>                    
+                                        <Test name="testPartialFirstTitleWord"/>                    
+                                        <Test name="testFullFirstTitleWord"/>                    
+                                        <Test name="testFullFirstTitleWordPartialSecond"/>                    
+                                        <Test name="testFullTitle"/>                    
+                                        <Test name="testFullTitleJapanese"/>                    
+                                        <Test name="testPartialTitleJapanese"/>                    
+                                        <Test name="testSoundmarkTitleJapanese"/>                                     
+                                </TestCase>                
+                                <TestCase name="IntentHandlerTests">                    
+                                        <Test name="testSwitchToTabWithUrl"/>                    
+                                        <Test name="testShortcut"/>                    
+                                        <Test name="testApplication"/>                    
+                                </TestCase>                
+                                <TestCase name="WebStorageSizeManagerUnitTests">                    
+                                        <Test name="testCallbacks">                        
+                                                <Description>                            Test the onExceededDatabaseQuota and onReachedMaxAppCacheSize callbacks                        </Description>                        
+                                        </Test>                    
+                                        <Test name="testCalculateGlobalLimit">                        
+                                                <Description>                            Test the application caches max size calculator.                        </Description>                        
+                                        </Test>                    
+                                        <Test name="testManyDatabasesOnOneOrigin"/>                                       
+                                </TestCase>                
+                                <TestCase name="JNIBindingsTestApp">                    
+                                        <Test name="testJNIBindings"/>                    
+                                </TestCase>                
+                                <TestCase name="JNIBindingsTest">                    
+                                        <Test name="testPrimitiveTypes"/>                    
+                                        <Test name="testObjectTypes"/>                    
+                                        <Test name="testArray"/>                    
+                                        <Test name="testObjectArray"/>                    
+                                        <Test name="testObjectMembers"/>                    
+                                        <Test name="testJSPrimitivesToStringsInJava"/>                    
+                                        <Test name="testParameterTypeMismatch"/>                    
+                                        <Test name="testAndroidTestCaseSetupProperly"/>                    
+                                </TestCase>                
+                                <TestCase name="PopularUrlsTest">                    
+                                        <Test name="testLoadPerformance"/>                    
+                                        <Test name="testStability"/>                    
+                                </TestCase>                
+                                <TestSuite name="tests">                    
+                                        <TestCase name="BP1to2UpgradeTests">                        
+                                                <Test name="testStockUpgrade">                            
+                                                        <Description>                                Test that simply makes sure BP1-&gt;BP2 with no changes works as intended                            </Description>                            
+                                                </Test>                        
+                                                <Test name="testPreserveHistory"/>                        
+                                                <Test name="testPreserveBookmarks"/>                        
+                                                <Test name="testEmptyUpgrade"/>                                              
+                                        </TestCase>                    
+                                        <TestCase name="BookmarksTests">                        
+                                                <Test name="testQueryCombinedForUrl"/>                                             
+                                        </TestCase>                    
+                                        <TestCase name="BP2UriObserverTests">                        
+                                                <Test name="testInsertBookmark"/>                        
+                                                <Test name="testUpdateBookmark"/>                        
+                                                <Test name="testUpdateBookmarkImages"/>                        
+                                                <Test name="testInsertHistory"/>                        
+                                                <Test name="testUpdateHistory"/>                        
+                                                <Test name="testUpdateHistoryImages"/>                                               
+                                        </TestCase>                    
+                                        <TestCase name="BP2ProviderTests">                        
+                                                <Test name="testUpdateImage"/>                        
+                                                <Test name="testIsValidParentNullAccount"/>                        
+                                                <Test name="testIsValidParentWithAccount"/>                        
+                                                <Test name="testAndroidTestCaseSetupProperly"/>                        
+                                        </TestCase>                    
+                                </TestSuite>                
+                        </TestSuite>            
+                </TestSuite>        
+        </TestSuite>    
+</TestPackage>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?><TestPackage AndroidFramework="Android 1.0" appNameSpace="com.android.settings.tests" appPackageName="android.settings" name="SettingsTests" runner="android.test.InstrumentationTestRunner"  targetNameSpace="com.android.settings" version="1.0">    
+        <TestSuite name="com">        
+                <TestSuite name="android">            
+                        <TestSuite name="settings">                
+                                <TestCase name="SettingsHookTests">                    
+                                        <Test name="testSettingsHookTestAppAvailable">                        
+                                                <Description>                            Test that the operator/manufacturer settings hook test application is
+ available and that it's installed in the device's system image.                        </Description>                        
+                                        </Test>                    
+                                        <Test name="testOperatorIntentFilter">                        
+                                                <Description>                            Test that the operator test activity has registered an intent-filter for
+ an action named 'android.settings.OPERATOR_APPLICATION_SETTING'.                        </Description>                        
+                                        </Test>                    
+                                        <Test name="testManufacturerIntentFilter">                        
+                                                <Description>                            Test that the manufacturer test activity has registered an intent-filter
+ for an action named 'android.settings.MANUFACTURER_APPLICATION_SETTING'.                        </Description>                        
+                                        </Test>                    
+                                        <Test name="testOperatorPreferenceAvailable">                        
+                                                <Description>                            Test that the operator preference is available in the Settings
+ application.                        </Description>                        
+                                        </Test>                    
+                                        <Test name="testManufacturerPreferenceAvailable">                        
+                                                <Description>                            Test that the manufacturer preference is available in the Settings
+ application.                        </Description>                        
+                                        </Test>                    
+                                </TestCase>                
+                                <TestSuite name="bluetooth">                    
+                                        <TestCase name="Utf8ByteLengthFilterTest">                        
+                                                <Test name="testFilter"/>                        
+                                                <Test name="testAndroidTestCaseSetupProperly"/>                        
+                                        </TestCase>                    
+                                </TestSuite>                
+                        </TestSuite>            
+                </TestSuite>        
+        </TestSuite>    
+</TestPackage>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?><TestPackage AndroidFramework="Android 1.0" appNameSpace="com.android.cts.net" appPackageName="android.wifi.net" name="CtsNetTestCases" runner="android.test.InstrumentationCtsTestRunner" targetBinaryName="CtsTestStubs" targetNameSpace="com.android.cts.stub" version="1.0">    
+        <TestSuite name="android">        
+                <TestSuite name="net">                      
+                        <TestSuite name="wifi">                
+                                <TestSuite name="cts">                    
+                                        <TestCase name="WifiInfoTest">                        
+                                                <Test name="testWifiInfoProperties"/>                        
+                                                <Test name="testAndroidTestCaseSetupProperly"/>                        
+                                        </TestCase>                    
+                                        <TestCase name="WifiConfigurationTest">                        
+                                                <Test name="testWifiConfiguration"/>                        
+                                                <Test name="testAndroidTestCaseSetupProperly"/>                        
+                                        </TestCase>                    
+                                        <TestCase name="WifiManagerTest">                        
+                                                <Test name="testWifiManagerActions">                            
+                                                        <Description>                                test point of wifiManager actions:
+ 1.reconnect
+ 2.reassociate
+ 3.disconnect
+ 4.pingSupplicant
+ 5.satrtScan                            </Description>                            
+                                                </Test>                        
+                                                <Test name="testWifiManagerProperties">                            
+                                                        <Description>                                test point of wifiManager properties:
+ 1.enable properties
+ 2.DhcpInfo properties
+ 3.wifi state
+ 4.ConnectionInfo                            </Description>                            
+                                                </Test>                        
+                                                <Test name="testWifiManagerNetWork">                            
+                                                        <Description>                                test point of wifiManager NetWork:
+ 1.add NetWork
+ 2.update NetWork
+ 3.remove NetWork
+ 4.enable NetWork
+ 5.disable NetWork
+ 6.configured Networks
+ 7.save configure;                            </Description>                            
+                                                </Test>                        
+                                                <Test name="testSignal"/>                        
+                                                <Test name="testAndroidTestCaseSetupProperly"/>                        
+                                        </TestCase>                    
+                                        <TestCase name="SupplicantStateTest">                        
+                                                <Test name="testIsValidState"/>                        
+                                                <Test name="testAndroidTestCaseSetupProperly"/>                        
+                                        </TestCase>                    
+                                        <TestCase name="ScanResultTest">                        
+                                                <Test name="testScanResultProperties"/>                        
+                                                <Test name="testAndroidTestCaseSetupProperly"/>                        
+                                        </TestCase>                    
+                                        <TestCase name="WifiManager_WifiLockTest">                        
+                                                <Test name="testWifiLock"/>                        
+                                                <Test name="testAndroidTestCaseSetupProperly"/>                        
+                                        </TestCase>                    
+                                </TestSuite>                
+                        </TestSuite>            
+                </TestSuite>        
+        </TestSuite>    
+</TestPackage>

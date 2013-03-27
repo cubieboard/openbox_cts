@@ -66,7 +66,7 @@ public class VMHostTest extends JarHostTest {
         CLog.d("Creating device temp directory, including dalvik-cache.");
         createRemoteDir(device, VM_TEST_TEMP_DIR + "/dalvik-cache" );
         try {
-            File localTmpDir = FileUtil.createTempDir("cts-vm", new File("/tmp/"));
+            File localTmpDir = FileUtil.createTempDir("cts-vm", new File(System.getProperty("java.io.tmpdir"))); 
             CLog.d("Creating host temp dir %s", localTmpDir.getPath());
             File jarFile = new File(ctsBuild.getTestCasesDir(), getJarFileName());
             if (!jarFile.exists()) {

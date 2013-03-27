@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestPackage AndroidFramework="Android 1.0"
+	 appNameSpace="com.android.camera.tests" 
+	 appPackageName="android.camera" name="CameraTests"
+	 runner="android.test.InstrumentationTestRunner" 
+	 targetNameSpace="com.android.camera" version="1.0">    
+        <TestSuite name="com">        
+                <TestSuite name="android">            
+                        <TestSuite name="camera">    
+                                <TestSuite name="functional">                    
+                                      <TestCase name="ImageCaptureIntentTest">                        
+                                           <Test name="testNoExtraOutput"/>                        
+                                           <Test name="testRetake"/>  
+                                           <Test name="testCancel"/>   
+                                           <Test name="testSnapshotCancel"/>                         
+                                       </TestCase> 
+                                        <TestCase name="VideoCaptureIntentTest">                        
+                                           <Test name="testNoExtraOutput"/>                        
+                                           <Test name="testRetake"/>  
+                                           <Test name="testCancel"/>   
+                                           <Test name="testSnapshotCancel"/>  
+                                           <Test name="testExtraSizeLimit"/>  
+                                           <Test name="testExtraDurationLimit"/>   
+                                           <Test name="testExtraVideoQuality"/>                        
+                                       </TestCase> 
+                                </TestSuite>  
+                                                              
+                                <TestSuite name="stress">                                       
+                                        <TestCase name="CameraLatency">                        
+                                                <Test name="testImageCapture"/>                        
+                                        </TestCase>                    
+                                        <TestCase name="SwitchPreview">                        
+                                                <Test name="testSwitchMode"/>                        
+                                        </TestCase>                    
+                                        <TestCase name="CameraStartUp">                        
+                                                <Test name="testLaunchVideo"/>                        
+                                                <Test name="testLaunchCamera"/>                        
+                                        </TestCase>                    
+                                </TestSuite>   
+                                <TestSuite name="power">                    
+                                        <TestCase name="ImageAndVideoCapture">                                        
+                                                <Test name="testCapture5Image"/>                        
+                                                <Test name="testCapture5Videos"/>                        
+                                        </TestCase>                    
+                                </TestSuite>                              
+                        </TestSuite>            
+                </TestSuite>        
+        </TestSuite>    
+</TestPackage>
+
+                              

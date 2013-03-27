@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestPackage AndroidFramework="Android 1.0"
+	 appNameSpace="com.android.camera.tests" 
+	 appPackageName="android.camera.stress" name="CameraTests"
+	 runner="com.android.camera.stress.CameraStressTestRunner" 
+	 targetNameSpace="com.android.camera" version="1.0">    
+        <TestSuite name="com">        
+                <TestSuite name="android">            
+                        <TestSuite name="camera">                               
+                                <TestSuite name="stress">                    
+                                        <TestCase name="ImageCapture">                                              
+                                                <Test name="testBackImageCapture"/>                        
+                                                <Test name="testFrontImageCapture"/>                        
+                                        </TestCase>   
+                                        <TestCase name="VideoCapture">                                              
+                                                <Test name="testBackVideoCapture"/>                        
+                                                <Test name="testFrontVideoCapture"/>                        
+                                        </TestCase>
+                                </TestSuite>                                                  
+                        </TestSuite>            
+                </TestSuite>        
+        </TestSuite>    
+</TestPackage>
+ 

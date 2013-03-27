@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?><TestPackage AndroidFramework="Android 1.0" appNameSpace="com.android.cts.hardware" appPackageName="android.camera.hardware" name="CtsHardwareTestCases" runner="android.test.InstrumentationTestRunner" targetBinaryName="CtsTestStubs" targetNameSpace="com.android.cts.stub" version="1.0">    
+        <TestSuite name="android">        
+                <TestSuite name="hardware">            
+                        <TestSuite name="cts">                                                                                            
+                                <TestCase name="CameraTest">                    
+                                        <Test name="testTakePicture"/>                    
+                                        <Test name="testPreviewCallback"/>                    
+                                        <Test name="testSetOneShotPreviewCallback"/>                    
+                                        <Test name="testSetPreviewDisplay"/>                    
+                                        <Test name="testDisplayOrientation"/>                    
+                                        <Test name="testParameters"/>                    
+                                        <Test name="testJpegThumbnailSize"/>                    
+                                        <Test name="testJpegExif"/>                    
+                                        <Test name="testLockUnlock"/>                    
+                                        <Test name="testPreviewCallbackWithBuffer"/>                    
+                                        <Test name="testImmediateZoom"/>                    
+                                        <Test name="testSmoothZoom"/>                    
+                                        <Test name="testFocusDistances"/>                    
+                                        <Test name="testCancelAutofocus"/>                    
+                                        <Test name="testMultipleCameras"/>                    
+                                        <Test name="testPreviewPictureSizesCombination"/>                    
+                                        <Test name="testPreviewFpsRange"/>                    
+                                        <Test name="testSceneMode"/>                    
+                                        <Test name="testInvalidParameters"/>                    
+                                        <Test name="testGetParameterDuringFocus"/>                    
+                                        <Test name="testPreviewFormats"/>                    
+                                        <Test name="testMultiCameraRelease"/>                    
+                                        <Test name="testFocusAreas"/>                    
+                                        <Test name="testMeteringAreas"/>                    
+                                        <Test name="testJpegCallbackStartPreview"/>                    
+                                        <Test name="testRecordingHint"/>                    
+                                        <Test name="testAutoExposureLock"/>                    
+                                        <Test name="testAutoWhiteBalanceLock"/>                    
+                                        <Test name="test3ALockInteraction"/>                    
+                                        <Test name="testFaceDetection"/>                    
+                                        <Test name="testVideoSnapshot"/>                    
+                                </TestCase>                
+                        </TestSuite>            
+                </TestSuite>        
+        </TestSuite>    
+</TestPackage>

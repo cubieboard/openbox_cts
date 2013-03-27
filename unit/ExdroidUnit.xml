@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestPlan version="1.0">
+ 
+  <Entry uri="android.camera"/>
+  <Entry uri="android.camera.stress"/>
+  <Entry uri="android.camera.media.stress"/>
+  <Entry uri="android.camera.hardware"/>
+  <Entry uri="android.camera.function.media"/>
+   <Entry uri="android.camera.media.performance"/>
+  <Entry uri="android.camera.media.cts"/>
+  <Entry uri="android.wifi.content"/>
+  <Entry uri="android.wifi.stress"/>
+  <Entry uri="android.wifi.unit"/>
+  <Entry uri="android.wifi.net"/>
+  <Entry uri="android.media.framework"/>
+  <Entry uri="android.settings"/>
+  <Entry uri="android.browser"/>
+ 
+</TestPlan>

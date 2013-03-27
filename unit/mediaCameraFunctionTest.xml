@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestPackage AndroidFramework="Android 1.0"
+	 appNameSpace="com.android.mediaframeworktest" 
+	 appPackageName="android.camera.function.media" name="mediaframeworktest"
+	 runner=".MediaFrameworkTestRunner" 
+	 targetNameSpace="com.android.mediaframeworktest" version="1.0">    
+        <TestSuite name="com">        
+                <TestSuite name="android">            
+                        <TestSuite name="mediaframeworktest">                               
+                                <TestSuite name="functional">   
+                                         <TestSuite name="mediarecorder">                   
+                                                <TestCase name="MediaRecorderTest">                                              
+                                                     <Test name="testPortraitH263"/>                        
+                                                     <Test name="testInvalidVideoPath"/> 
+                                                     <Test name="testDeviceSpecificCodec"/>                      
+                                                </TestCase>   
+                                         </TestSuite> 
+                                         <TestCase name="CameraTest">                                              
+                                                   <Test name="testTakePicture"/>                        
+                                                   <Test name="testCheckPreview"/>                     
+                                         </TestCase> 
+                                </TestSuite>                                                  
+                        </TestSuite>            
+                </TestSuite>        
+        </TestSuite>    
+</TestPackage>
+<!--
+<test name="mediaCameraRecorderTtest"
+    build_path="frameworks/base/media/tests/MediaFrameworkTest"
+    package="com.android.mediaframeworktest"
+    class="com.android.mediaframeworktest.functional.mediarecorder.MediaRecorderTest"
+    runner=".MediaFrameworkTestRunner"
+    coverage_target="framework" />
+<test name="mediaCameraTest"
+    build_path="frameworks/base/media/tests/MediaFrameworkTest"
+    package="com.android.mediaframeworktest"
+    class="com.android.mediaframeworktest.functional.CameraTest"
+    runner=".MediaFrameworkTestRunner"
+     />
+-->

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?><TestPackage AndroidFramework="Android 1.0" appNameSpace="com.android.cts.media" appPackageName="android.camera.media.cts" name="CtsMediaTestCases" runner="android.test.InstrumentationCtsTestRunner" targetBinaryName="CtsTestStubs" targetNameSpace="com.android.cts.stub" version="1.0">    
+        <TestSuite name="android">        
+                <TestSuite name="media">            
+                        <TestSuite name="cts">                
+                                <TestCase name="CameraProfileTest">                    
+                                        <Test name="testGetImageEncodingQualityParameter"/>                    
+                                        <Test name="testGetWithId"/>                    
+                                        <Test name="testAndroidTestCaseSetupProperly"/>                    
+                                </TestCase>                
+                                                                                                                                                                                            
+                                <TestCase name="MediaRecorderTest">                    
+                                        <Test name="testRecorderCamera"/>                    
+                                        <Test name="testSetCamera"/>                    
+                                        <Test name="testRecorderVideo"/>                    
+                                        <Test name="testRecorderAudio"/>                    
+                                        <Test name="testOnInfoListener"/>                    
+                                        <Test name="testSetMaxDuration"/>                    
+                                        <Test name="testSetMaxFileSize"/>                    
+                                        <Test name="testOnErrorListener"/>                    
+                                </TestCase>                                                                                                         
+                        </TestSuite>            
+                </TestSuite>        
+        </TestSuite>    
+</TestPackage>

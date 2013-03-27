@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?><TestPackage AndroidFramework="Android 1.0" 
+	appNameSpace="com.android.connectivitymanagertest" 
+	appPackageName="android.wifi.stress" 
+	name="ConnectivityManagerTest" 
+	runner=".ConnectivityManagerStressTestRunner"  targetNameSpace="com.android.connectivitymanagertest" version="1.0">    
+        <TestSuite name="com">        
+                <TestSuite name="android">            
+                        <TestSuite name="connectivitymanagertest">   
+                                <TestSuite name="stress">                                                                                             
+                                       <TestCase name="WifiApStress">                    
+                                          <Test name="testWifiHotSpot"/>                    
+                                                                        
+                                        </TestCase>  
+                                        <TestCase name="WifiStressTest">                    
+                                           <Test name="testWifiScanning"/>  
+                                           <Test name="testWifiReconnectionAfterSleep"/>                                       
+                                        </TestCase>    
+                                </TestSuite>             
+                        </TestSuite>            
+                </TestSuite>        
+        </TestSuite>    
+</TestPackage>
+
+
+<!--
+<test name="WifiStressTest"
+    build_path="frameworks/base/core/tests/ConnectivityManagerTest"
+    package="com.android.connectivitymanagertest"
+    runner=".ConnectivityManagerStressTestRunner"
+    /> 
+com.android.connectivitymanagertest.stress.WifiApStress
+com.android.connectivitymanagertest.stress.WifiStressTest 
+-->

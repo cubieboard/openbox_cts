@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestPackage AndroidFramework="Android 1.0"
+	 appNameSpace="com.android.mediaframeworktest" 
+	 appPackageName="android.media.framework" name="mediaframeworktest"
+	 runner="android.test.InstrumentationTestRunner" 
+	 targetNameSpace="com.android.mediaframeworktest" version="1.0">    
+        <TestSuite name="com">        
+                <TestSuite name="android">            
+                        <TestSuite name="mediaframeworktest">                               
+                               <TestSuite name="stress">                   
+                                        <TestCase name="MediaPlayerStressTest">                                              
+                                              <Test name="testVideoPlayback"/>                        
+                                        </TestCase> 
+                                        <TestCase name="VideoEditorStressTest">                                              
+                                              <Test name="testStressAddRemoveVideoItem"/>   
+                                              <Test name="testStressAddRemoveImageItem"/>   
+                                              <Test name="testStressAddRemoveTransition"/>   
+                                              <Test name="testStressAddRemoveOverlay"/>   
+                                              <Test name="testStressAddRemoveEffects"/>   
+                                              <Test name="testStressThumbnailVideoItem"/>   
+                                              <Test name="testStressMediaProperties"/>   
+                                              <Test name="testStressInsertMovieItems"/>   
+                                              <Test name="testStressLoadAndSave"/>   
+                                              <Test name="testStressMultipleExport"/>         
+                                              <Test name="testStressOverlayTransKenBurn"/>                 
+                                              <Test name="testStressAudioTrackVideo"/>  
+                                              <Test name="testStressStoryBoard"/>  
+                                              <Test name="testStressAudioTrackOnly"/>  
+                                              <Test name="testStressThumbnailImageItem"/>  
+                                              
+                                        </TestCase>   
+                                </TestSuite> 
+                                <TestSuite name="power">  
+                                	      <TestCase name="MediaPlayerPowerTest"> 
+                                	 	           <Test name="testPowerLocalMP3Playback"/>  
+                                	 	           <Test name="testPowerStreamMP3Playback"/>  
+                                	 	           <Test name="testPowerStreamOGGPlayback"/>  
+                                	 	           <Test name="testPowerStreamAACPlayback"/>  
+                                	      </TestCase>      
+                                </TestSuite> 
+                                <TestSuite name="unit">  
+                                	      <TestCase name="MediaMetadataRetrieverTest"> 
+                                	 	           <Test name="testGetEmbeddedPicture"/>  
+                                	 	           <Test name="testThumbnailCapture"/>  
+                                	 	           <Test name="testMetadataRetrieval"/>  
+                                	 	           <Test name="testBasicNormalMethodCallSequence"/>  
+                                	 	           <Test name="testBasicAbnormalMethodCallSequence"/>  
+                                	 	           <Test name="testSetDataSource"/>  
+                                	      </TestCase> 
+                                	      <TestCase name="MediaPlayerGetCurrentPositionStateUnitTest"> 
+                                	 	           <Test name="testGetCurrentPosition"/>  
+                                	      </TestCase>  
+                                	      <TestCase name="MediaPlayerGetDurationStateUnitTest"> 
+                                	 	           <Test name="getDuration"/>  
+                                	      </TestCase> 
+                                	      <TestCase name="MediaPlayerGetVideoHeightStateUnitTest"> 
+                                	 	           <Test name="testGetVideoHeight"/>  
+                                	      </TestCase>  
+                                	      <TestCase name="MediaPlayerGetVideoWidthStateUnitTest"> 
+                                	 	           <Test name="testGetVideoWidth"/>  
+                                	      </TestCase>  
+                                	      <TestCase name="MediaPlayerIsPlayingStateUnitTest"> 
+                                	 	           <Test name="testIsPlaying"/>  
+                                	      </TestCase> 
+                                	      <TestCase name="MediaPlayerMetadataParserTest"> 
+                                	 	           <Test name="testMissingSizeAndMarker"/>  
+                                	 	           <Test name="testMissingData"/> 
+                                	 	           <Test name="testEmptyIsOk"/> 
+                                	 	           <Test name="testRecordMissingId"/> 
+                                	 	           <Test name="testRecordMissingType"/> 
+                                	 	           <Test name="testRecordWithZeroPayload"/> 
+                                	 	           <Test name="testRecordMissingPayload"/> 
+                                	 	           <Test name="testRecordsFound"/> 
+                                	 	           <Test name="testBadMetadataType"/> 
+                                	 	           <Test name="testParseClearState"/> 
+                                	 	           <Test name="testGetString"/> 
+                                	 	           <Test name="testGetEmptyString"/> 
+                                	 	           <Test name="testGetNullString"/> 
+                                	 	           <Test name="testWrongType"/> 
+                                	 	           <Test name="testGetInt"/> 
+                                	 	           <Test name="testGetBoolean"/> 
+                                	 	           <Test name="testGetLong"/> 
+                                	 	           <Test name="testGetDouble"/> 
+                                	 	           <Test name="testGetByteArray"/> 
+                                	 	           <Test name="testGetDate"/> 
+                                	      </TestCase> 
+                                	      <TestCase name="MediaPlayerPauseStateUnitTest"> 
+                                	 	           <Test name="testPause"/>  
+                                	      </TestCase> 
+                                	      <TestCase name="MediaPlayerResetStateUnitTest"> 
+                                	 	           <Test name="testReset"/>  
+                                	      </TestCase> 
+                                	      <TestCase name="MediaPlayerSeekToStateUnitTest"> 
+                                	 	           <Test name="testSeekTo"/>  
+                                	      </TestCase> 
+                                	      <TestCase name="MediaPlayerSetAudioStreamTypeStateUnitTest"> 
+                                	 	           <Test name="testSetAudioStreamType"/>  
+                                	      </TestCase>
+                                	      <TestCase name="MediaPlayerSetLoopingStateUnitTest"> 
+                                	 	           <Test name="testSetLooping"/>  
+                                	      </TestCase>
+                                	      <TestCase name="MediaPlayerSetVolumeStateUnitTest"> 
+                                	 	           <Test name="testSetVolume"/>  
+                                	      </TestCase>
+                                	      <TestCase name="MediaPlayerStartStateUnitTest"> 
+                                	 	           <Test name="testStart"/>  
+                                	      </TestCase>
+                                	      <TestCase name="MediaPlayerStopStateUnitTest"> 
+                                	 	           <Test name="testStop"/>  
+                                	      </TestCase>
+                                </TestSuite>                                                                                   
+                        </TestSuite>            
+                </TestSuite>        
+        </TestSuite>    
+</TestPackage>
+<!--
+
+     com.android.mediaframeworktest.stress.MediaPlayerStressTest
+     com.android.mediaframeworktest.stress.VideoEditorStressTest
+     com.android.mediaframeworktest.power.MediaPlayerPowerTest
+     
+     com.android.mediaframeworktest.unit.MediaMetadataRetrieverTest
+     com.android.mediaframeworktest.unit.MediaPlayerGetCurrentPositionStateUnitTest
+     com.android.mediaframeworktest.unit.MediaPlayerGetDurationStateUnitTest
+     com.android.mediaframeworktest.unit.MediaPlayerGetVideoHeightStateUnitTest
+     com.android.mediaframeworktest.unit.MediaPlayerGetVideoWidthStateUnitTest
+     com.android.mediaframeworktest.unit.MediaPlayerIsPlayingStateUnitTest
+     com.android.mediaframeworktest.unit.MediaPlayerMetadataParserTest
+     com.android.mediaframeworktest.unit.MediaPlayerPauseStateUnitTest
+     com.android.mediaframeworktest.unit.MediaPlayerResetStateUnitTest
+     com.android.mediaframeworktest.unit.MediaPlayerSeekToStateUnitTest
+     com.android.mediaframeworktest.unit.MediaPlayerSetAudioStreamTypeStateUnitTest
+     com.android.mediaframeworktest.unit.MediaPlayerSetLoopingStateUnitTest
+     com.android.mediaframeworktest.unit.MediaPlayerSetVolumeStateUnitTest
+     com.android.mediaframeworktest.unit.MediaPlayerStartStateUnitTest
+     com.android.mediaframeworktest.unit.MediaPlayerStopStateUnitTest
+-->

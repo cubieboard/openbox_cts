@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestPackage AndroidFramework="Android 1.0"
+	 appNameSpace="com.android.mediaframeworktest" 
+	 appPackageName="android.camera.media.performance" name="mediaframeworktest"
+	 runner=".MediaFrameworkPerfTestRunner" 
+	 targetNameSpace="com.android.mediaframeworktest" version="1.0">    
+        <TestSuite name="com">        
+                <TestSuite name="android">            
+                        <TestSuite name="mediaframeworktest">                               
+                                <TestSuite name="performance">                    
+                                        <TestCase name="MediaPlayerPerformance">                                              
+                                                <Test name="testH263RecordVideoOnlyMemoryUsage"/>                        
+                                                <Test name="testMpeg4RecordVideoOnlyMemoryUsage"/> 
+                                                <Test name="testRecordVideoAudioMemoryUsage"/> 
+                                                <Test name="testRecordAudioOnlyMemoryUsage"/>     
+                                                <Test name="testCameraPreviewMemoryUsage"/>                    
+                                        </TestCase>   
+                                </TestSuite>                                                  
+                        </TestSuite>            
+                </TestSuite>        
+        </TestSuite>    
+</TestPackage>

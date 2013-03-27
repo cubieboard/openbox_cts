@@ -294,6 +294,10 @@ class TestPackageDef implements ITestPackageDef {
             // TODO: hack, large test suites can take longer to collect tests, increase timeout
             instrTest.setCollectsTestsShellTimeout(10 * 60 * 1000);
         }
+		//Camera can take longer to collent test,increase timeout
+		//if(mName.equals("CameraTests")){
+		instrTest.setTestTimeout(3000 * 1000);
+		//}
         return instrTest;
     }
 

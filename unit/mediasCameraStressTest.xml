@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestPackage AndroidFramework="Android 1.0"
+	 appNameSpace="com.android.mediaframeworktest" 
+	 appPackageName="android.camera.media.stress" name="mediaframeworktest"
+	 runner=".MediaRecorderStressTestRunner" 
+	 targetNameSpace="com.android.mediaframeworktest" version="1.0">    
+        <TestSuite name="com">        
+                <TestSuite name="android">            
+                        <TestSuite name="mediaframeworktest">                               
+                                <TestSuite name="stress">                    
+                                        <TestCase name="MediaRecorderStressTest">                                              
+                                                <Test name="testStressCamera"/>                        
+                                                <Test name="testStressRecorder"/> 
+                                                <Test name="testStressCameraSwitchRecorder"/> 
+                                                <Test name="testStressRecordVideoAndPlayback"/>                        
+                                        </TestCase>   
+                                </TestSuite>                                                  
+                        </TestSuite>            
+                </TestSuite>        
+        </TestSuite>    
+</TestPackage>
+

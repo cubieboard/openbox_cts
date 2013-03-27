@@ -77,12 +77,21 @@ CTS_COVERAGE_TEST_CASE_LIST := \
 	SignatureTest \
 	TestDeviceSetup \
 	$(CTS_SECURITY_APPS_LIST)
+        
+
+CTS_Exdroid_TEST_CASE_LIST := \
+        CameraTests \
+        mediaframeworktest \
+        ConnectivityManagerTest \
+        SettingsTests \
+        BrowserTests 
 
 CTS_TEST_CASE_LIST := \
 	com.replica.replicaisland \
 	ApiDemos \
 	ApiDemosReferenceTest \
 	$(CTS_COVERAGE_TEST_CASE_LIST) \
+	$(CTS_Exdroid_TEST_CASE_LIST)
 
 CTS_NATIVE_EXES := \
 	CtsNativeMediaTestCases
